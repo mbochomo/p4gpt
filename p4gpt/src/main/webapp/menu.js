@@ -20,7 +20,7 @@ function main(){
  
 	});
  
-};
+}
 
 // Mostramos y ocultamos submenus
 	$('.submenu').click(function(){
