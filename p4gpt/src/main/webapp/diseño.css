@@ -1,0 +1,216 @@
+body{
+    background-color: beige;
+}
+
+header nav{
+    width: 100%;
+    padding: 0px;
+}
+
+
+ul,ol{
+    list-style: none;
+}
+
+.menu_bar{
+    display: none;
+}
+
+#navlog li a{
+    font-size: 20px;
+}
+
+header nav ul{
+    
+    margin:0;
+    padding:0px;
+    border-style: inset;
+    border-color: darkgrey;
+    padding:0 auto;
+    background-image: url("images/elegant2.png"); 
+}
+
+
+header nav ul li{
+
+    display: inline-block;
+    position:relative;
+}
+
+header nav ul li:hover {
+	background:beige;
+}
+
+header nav ul li a{
+    color:darkred;
+    font-size: 18px;
+    padding:20px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+header nav ul li a span{
+    margin-right: 10px;
+}
+header nav ul li:hover .children{ 
+    display: block;
+}
+
+/*Primero lo ocultamos*/
+header nav ul li .children{
+    display:none;
+    background-color: white;
+    position:absolute;
+    width:150%;
+    padding-left: 0;
+}
+
+header nav ul li .children li{
+    display:block;/*coge todo el bloque*/
+    overflow: hidden;
+    border-bottom: 1px solid beige;
+}
+
+
+header nav ul li a:hover{
+    background-color:beige;
+}
+
+.marco{
+	display:flex;
+	padding-left:2%; 
+	padding-right:2%;
+	padding-top:0%;
+    margin-top: 45px;
+}
+
+.marco span{
+	display:block;
+}
+
+.marco span:first-child{
+	width:80%;/*Aqui hacemos el ancho del marco*/
+    height: 100%;
+}
+
+.marco span:last-child{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.marco #span1{
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+    background-color: white;
+}
+
+.titulo{
+    width:100%;
+}
+.tipoproducto:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.contenedor{
+    width:33%;
+    float:left;
+}
+.imagenes{
+    width:73%;
+}
+.precio{
+    color:green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.infoproducto{
+    font-size: 18px;
+}
+
+.tipoproducto{
+    margin-top:100px;
+}
+
+#imginicial{
+    width:60%;
+}
+
+
+@media screen and (max-width:400px ) { /*Adaptado a dispositivos móviles*/
+    
+    body{
+        padding-top: 80px;
+    }
+    
+	header nav {
+        
+        height:100%;
+        left:-100%;
+		position: fixed; 
+        width: 80%;
+        text-align: left;
+        margin:0;
+    }
+    header nav ul{
+        padding-left: 1%;
+        background: #ccc;
+    }
+   
+    header nav ul li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255, 0.3);
+    }
+     
+    header nav ul li a{
+        display: block;
+    }
+    
+    header nav ul li .children{
+        width:100%;
+        position:relative;
+    }
+    
+    .menu_bar{
+        display: block;
+        width:100%;
+        top:0; /*Pegado arriba del todo*/
+        background: #ccc;
+        position:fixed;
+    }
+    
+    .menu_bar .bt-menu{
+        display:block;
+        padding:20px;
+        background: url("images/elegant2.png");
+        color:blanchedalmond;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 30px;
+        overflow: hidden;
+    }
+    
+    .menu_bar span{
+        float:right;
+        font-size: 40px;
+    }
+    span h1{
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 30px;
+    }
+    
+    
+    .contenedor{
+        width:100%;
+    }
+    #imginicial{
+    width:100%;
+    }
+   
+   
+}
+

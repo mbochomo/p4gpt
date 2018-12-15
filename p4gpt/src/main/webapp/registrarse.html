@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Informacion</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="diseño.css">
+        <link rel="stylesheet" href="form.css">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <body>
+    
+    <header align="center">
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+		</div>
+		<nav>
+			<ul class="nav">
+				<li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
+				<li><a href="contacto.html"><span class="icon-mail2"></span>Contacto</a></li>
+				<li><a href="login.html"><span class="icon-user"></span>Login</a></li>
+				<li><a href="registrarse.html"><span class="icon-users"></span>Registrarse</a></li>
+			</ul>
+		</nav>
+	
+     </header>
+     <div class="contenedor-inputs">
+    <form action="Principal.html" class="form-registro">
+        <div class="titulo"><h2>Crear una cuenta</h2></div>
+        <div class="fila">
+            <div class="label"><label for="input-nombre">Nombre: </label></div>
+            <div class="input"><input type="text" name="nombre" placeholder="Nombre" class="inputs-chicos-reg"
+                                      id="input-nombre" required></div>
+        </div>
+        <div class="fila">
+            <div class="label"><label for="input-apellidos">Apellidos:</label></div>
+            <div class="input"><input type="text" name="apellidos" placeholder="Apellidos" class="inputs-chicos-reg"
+                                      id="input-apellidos"
+                                      required></div>
+        </div>
+        <div class="fila">
+            <div class="label"><label for="input-dni">DNI:</label></div>
+            <div class="input"><input type="text" name="dni" placeholder="DNI" class="inputs-chicos-reg" id="input-dni"
+                                      required></div>
+        </div>
+        <div class="fila">
+            <div class="label"><label for="input-telefono">Teléfono:</label></div>
+            <div class="input"><input type="text" name="telefono" placeholder="Teléfono" class="inputs-chicos-reg"
+                                      id="input-telefono"
+                                      required></div>
+        </div>
+        <div class="fila">
+            <div class="label"><label for="input-provincia">Provincia: </label></div>
+            <div class="input"><select name="provincia" class="inputs-reg-nino" id="input-provincia" required>
+                <option selected>Seleccionar provincia</option>
+                <option value="">Badajoz</option>
+                <option value="">Cáceres</option>
+            </select>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="label"><label for="input-localidad">Localidad:</label></div>
+            <div class="input"><input type="text" name="localidad" placeholder="Localidad" class="inputs-chicos-reg"
+                                      id="input-localidad"
+                                      required></div>
+        </div>
+        <div class="fila">
+            <div class="label"><label for="input-email">Correo electrónico:</label></div>
+            <div class="input"><input type="email" name="correo" placeholder="Correo electronico"
+                                      class="input-grande-reg" id="input-email"
+                                      required></div>
+        </div>
+        <div class="fila">
+            <div class="label"><label for="input-contrasena">Contraseña:</label></div>
+            <div class="input"><input type="password" name="contrasena" placeholder="Contraseña"
+                                      class="inputs-chicos-reg"
+                                      id="input-contrasena" required></div>
+        </div>
+        <div class="fila">
+        <div class="botones"><input type="submit" value="Registrarse" class="btn-reg"></div>
+        </div>
+    </form>
+</div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="menu.js"></script>
+    </body>
+    </html>
